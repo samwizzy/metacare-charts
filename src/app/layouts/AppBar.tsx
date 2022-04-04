@@ -6,7 +6,7 @@ import AccountMenu from "../components/AccountMenu";
 
 function AppBar() {
   return (
-    <div className="sm:flex block justify-between items-center border px-4 py-2">
+    <div className="sm:flex block justify-between items-center border border-l-0 px-4 py-2">
       <form className="flex border sm:w-96 w-full rounded-md overflow-hidden bg-gray-100 sm:mb-0 mb-4">
         <input
           type="text"

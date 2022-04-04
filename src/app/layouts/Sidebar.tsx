@@ -38,9 +38,9 @@ function Sidebar() {
   };
 
   return (
-    <div className="h-screen w-64 max-w-md border sm:block hidden">
+    <div className="min-h-screen w-64 max-w-md border-r sm:block hidden">
       <div className="border m-2 px-8 py-4 bg-gray-50 rounded-sm">
-        <span className="text-gray-800 text-sm block">Metacare</span>
+        <span className="text-gray-800 text-base block">Metacare</span>
         <span className="text-gray-600 text-xs">adeyinka@metacare.app</span>
       </div>
 

@@ -51,8 +51,11 @@ function Home() {
               </div>
 
               <Box
-                className="w-full sm:h-96 h-full"
-                sx={{ height: { xs: 320, md: 480 } }}
+                sx={{
+                  height: { xs: "auto", md: 480 },
+                  overflowX: "auto",
+                  whiteSpace: "nowrap",
+                }}
               >
                 <LineChart data={chart.data} legend={chart.title} />
               </Box>

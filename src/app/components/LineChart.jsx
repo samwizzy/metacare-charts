@@ -1,5 +1,5 @@
 import React from "react";
-import { ResponsiveLine } from "@nivo/line";
+import { /*ResponsiveLine,*/ Line } from "@nivo/line";
 
 type Props = {
   data: any,
@@ -7,9 +7,11 @@ type Props = {
 };
 
 const LineChart = ({ data, legend }: Props) => (
-  <ResponsiveLine
+  <Line
     data={data}
-    colors={{ scheme: "category10", datum: "color" }}
+    width={920}
+    height={400}
+    colors={{ scheme: "nivo", datum: "color" }}
     borderColor={{ from: "color" }}
     margin={{ top: 50, right: 40, bottom: 50, left: 60 }}
     xScale={{ type: "point" }}
