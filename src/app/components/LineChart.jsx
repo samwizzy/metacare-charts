@@ -3,9 +3,10 @@ import { ResponsiveLine } from "@nivo/line";
 
 type Props = {
   data: any,
+  legend?: string,
 };
 
-const LineChart = ({ data }: Props) => (
+const LineChart = ({ data, legend }: Props) => (
   <ResponsiveLine
     data={data}
     colors={{ scheme: "category10", datum: "color" }}
@@ -27,7 +28,7 @@ const LineChart = ({ data }: Props) => (
       tickSize: 5,
       tickPadding: 5,
       tickRotation: 0,
-      legend: "transportation",
+      legend: legend,
       legendOffset: 36,
       legendPosition: "middle",
     }}

@@ -7,10 +7,10 @@ import Divider from "@mui/material/Divider";
 import Avatar from "@mui/material/Avatar";
 
 import {
-  MdEdit,
-  MdArchive,
+  MdOutlineEdit,
   MdMoreHoriz,
   MdKeyboardArrowDown,
+  MdOutlineVerifiedUser,
 } from "react-icons/md";
 
 const StyledMenu = styled((props: MenuProps) => (
@@ -41,10 +41,10 @@ const StyledMenu = styled((props: MenuProps) => (
       padding: "4px 0",
     },
     "& .MuiMenuItem-root": {
-      fontSize: "0.8rem",
+      fontSize: 14,
       "& svg": {
         marginRight: theme.spacing(1.5),
-        fontSize: 18,
+        fontSize: 20,
         color: theme.palette.text.secondary,
       },
       "&:active": {
@@ -78,7 +78,7 @@ export default function AccountMenu() {
         onClick={handleClick}
         endIcon={<MdKeyboardArrowDown />}
       >
-        <Avatar sx={{ width: 20, height: 20 }} />
+        <Avatar sx={{ width: 24, height: 24 }} />
       </Button>
       <StyledMenu
         id="demo-customized-menu"
@@ -90,14 +90,15 @@ export default function AccountMenu() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} disableRipple>
-          <MdEdit />
+          <MdOutlineEdit />
           Edit
         </MenuItem>
-        <Divider sx={{ my: 0.5 }} />
+
         <MenuItem onClick={handleClose} disableRipple>
-          <MdArchive />
-          Archive
+          <MdOutlineVerifiedUser />
+          Profile
         </MenuItem>
+        <Divider />
         <MenuItem onClick={handleClose} disableRipple>
           <MdMoreHoriz />
           More

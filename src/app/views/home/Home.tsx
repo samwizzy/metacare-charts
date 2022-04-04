@@ -26,7 +26,7 @@ function Home() {
       <div className="border my-8">
         {chartAnalytics.map((chart) => (
           <div key={chart.id} className="grid grid-cols-12 sm:gap-x-4 border-b">
-            <div className="md:col-span-8 col-span-12 border-r">
+            <div className="md:col-span-8 col-span-12 sm:border-r border-r-0">
               <div className="flex items-center justify-between my-4 px-4 py-2">
                 <h4 className="text-gray-800 text-base">
                   {chart.title}{" "}
@@ -54,7 +54,7 @@ function Home() {
                 className="w-full sm:h-96 h-full"
                 sx={{ height: { xs: 320, md: 480 } }}
               >
-                <LineChart data={chart.data} />
+                <LineChart data={chart.data} legend={chart.title} />
               </Box>
             </div>
 

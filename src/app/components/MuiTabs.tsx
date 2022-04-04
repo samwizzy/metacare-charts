@@ -32,7 +32,7 @@ export default function MuiTabs(props: TabsProps) {
           value={value}
           onChange={handleChange}
           variant="scrollable"
-          scrollButtons
+          scrollButtons="auto"
           indicatorColor="secondary"
           textColor="inherit"
           aria-label="full width tabs example"
