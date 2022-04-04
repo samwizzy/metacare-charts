@@ -21,7 +21,7 @@ export default function MuiSelect(props: SelectProps) {
   };
 
   return (
-    <Box sx={{ minWidth: 160 }} className={className}>
+    <Box sx={{ minWidth: 160, height: 40 }} className={className}>
       <FormControl fullWidth size={size}>
         <InputLabel id="demo-simple-select-label">Filter options</InputLabel>
         <Select

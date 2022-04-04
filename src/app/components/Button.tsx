@@ -24,7 +24,7 @@ function Button(props: ButtonProps) {
   } = props;
 
   return (
-    <MuiButton size={size} variant={variant} color={color} sx={{ py: 1 }}>
+    <MuiButton size={size} variant={variant} color={color} sx={{ height: 40 }}>
       {children}
     </MuiButton>
   );

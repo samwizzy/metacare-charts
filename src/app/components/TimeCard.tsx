@@ -10,7 +10,7 @@ function TimeCard(props: Props) {
 
   return (
     <div className="bg-gray-100 rounded-md py-12 px-8">
-      <span className="text-gray-600 text-xs block">{title}</span>
+      <span className="text-gray-600 text-sm block">{title}</span>
       <span className="text-gray-800 text-lg">{datetime}</span>
     </div>
   );
