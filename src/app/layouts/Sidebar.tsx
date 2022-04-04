@@ -1,10 +1,32 @@
+/** @jsxImportSource @emotion/react */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
 import { Stack } from "@mui/material";
 import { menus } from "./data/menus";
+import { css, SerializedStyles } from "@emotion/react";
+import { useTheme } from "@mui/material";
+
+const useStyles = (): SerializedStyles => {
+  const theme = useTheme();
+
+  return css`
+    .link {
+      &:hover {
+        color: ${theme.palette.secondary.main};
+      }
+      &:active {
+        color: ${theme.palette.secondary.dark};
+      }
+      &:focus {
+        color: ${theme.palette.secondary.dark};
+      }
+    }
+  `;
+};
 
 function Sidebar() {
+  const styles = useStyles();
   const [menuLists, setMenuLists] = useState(menus);
 
   const handleClick = (menuId: number) => {
@@ -22,14 +44,14 @@ function Sidebar() {
         <span className="text-gray-600 text-xs">adeyinka@metacare.app</span>
       </div>
 
-      <nav className="text-sm text-gray-600">
+      <nav className="text-sm text-gray-600" css={styles}>
         <ul>
           {menuLists.map((menu) => {
             if (!menu.subMenus.length) {
               return (
                 <li key={menu.id}>
                   <button
-                    className="w-full flex justify-between items-center py-3 px-4"
+                    className="w-full flex justify-between items-center py-3 px-4 link"
                     onClick={() => handleClick(menu.id)}
                   >
                     <Stack alignItems="center" direction="row">
