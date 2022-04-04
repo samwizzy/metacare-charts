@@ -9,6 +9,7 @@ type SelectProps = {
   children: React.ReactNode;
   size?: "small" | "medium";
   className?: string;
+  sx?: any;
 };
 
 export default function MuiSelect(props: SelectProps) {
