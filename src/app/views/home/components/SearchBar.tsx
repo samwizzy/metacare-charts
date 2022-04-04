@@ -13,7 +13,7 @@ function SearchBar() {
 
       <div>
         <form className="sm:flex block items-center sm:space-x-4">
-          <div className="flex border sm:w-80 w-full rounded-md overflow-hidden bg-gray-100 sm:mb-0 mb-3">
+          <div className="flex border sm:w-80 w-full w-full rounded-md overflow-hidden bg-gray-100 sm:mb-0 mb-3">
             <button className="bg-transparent border-0 px-2">
               <FiSearch size={18} className="text-gray-600" />
             </button>

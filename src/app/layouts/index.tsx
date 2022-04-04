@@ -5,7 +5,7 @@ import AppBar from "src/app/layouts/AppBar";
 
 function Layout() {
   return (
-    <div className="flex border">
+    <div className="flex">
       <Sidebar />
 
       <main className="flex-1">

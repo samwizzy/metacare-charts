@@ -26,11 +26,13 @@ export default function MuiTabs(props: TabsProps) {
   const { children, links, value, handleChange } = props;
 
   return (
-    <Box sx={{ bgcolor: "background.paper" }}>
+    <Box sx={{ bgcolor: "background.paper", maxWidth: { xs: "100%" } }}>
       <AppBar position="static" elevation={0} color="transparent">
         <Tabs
           value={value}
           onChange={handleChange}
+          variant="scrollable"
+          scrollButtons
           indicatorColor="secondary"
           textColor="inherit"
           aria-label="full width tabs example"

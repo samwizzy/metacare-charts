@@ -3,6 +3,7 @@ import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import DatePicker from "@mui/lab/DatePicker";
 import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
 import SearchBar from "./components/SearchBar";
 import LineChart from "src/app/components/LineChart";
 import { TimeCard } from "src/app/components";
@@ -49,9 +50,12 @@ function Home() {
                 </LocalizationProvider>
               </div>
 
-              <div className="w-full h-96" style={{ height: 500 }}>
+              <Box
+                className="w-full sm:h-96 h-full"
+                sx={{ height: { xs: 320, md: 480 } }}
+              >
                 <LineChart data={chart.data} />
-              </div>
+              </Box>
             </div>
 
             <div className="flex flex-col space-y-4 md:col-span-4 col-span-12 p-4">
