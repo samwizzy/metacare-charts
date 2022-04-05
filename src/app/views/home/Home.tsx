@@ -23,7 +23,7 @@ function Home() {
       <SearchBar />
       <hr className="h-0 border-0 border-b" />
 
-      <div className="border my-8">
+      <div className="border border-b-0 my-8">
         {chartAnalytics.map((chart) => (
           <div key={chart.id} className="grid grid-cols-12 sm:gap-x-4 border-b">
             <div className="md:col-span-8 col-span-12 sm:border-r border-r-0">
