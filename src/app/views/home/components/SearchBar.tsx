@@ -6,7 +6,7 @@ import { FiSearch } from "react-icons/fi";
 
 function SearchBar() {
   return (
-    <div className="sm:flex block justify-between px-4 py-3">
+    <div className="sm:flex block justify-between sm:px-4 px-0 py-3">
       <h4 className="text-gray-800 text-lg font-medium capitalize sm:mb-0 mb-4 mr-6">
         Efficiency Analytics
       </h4>

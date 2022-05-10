@@ -19,7 +19,7 @@ function Home() {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <SearchBar />
       <hr className="h-0 border-0 border-b" />
 
@@ -28,7 +28,7 @@ function Home() {
           <div key={chart.id} className="grid grid-cols-12 sm:gap-x-4 border-b">
             <div className="md:col-span-8 col-span-12 sm:border-r border-r-0">
               <div className="flex items-center justify-between my-4 px-4 py-2">
-                <h4 className="text-gray-800 text-base">
+                <h4 className="text-gray-800 text-base mr-2">
                   {chart.title}{" "}
                   <span className="p-1.5 rounded-xl bg-lime-200 text-xs">
                     +4.14%
