@@ -26,7 +26,7 @@ export default function MuiTabs(props: TabsProps) {
   const { children, links, value, handleChange } = props;
 
   return (
-    <Box sx={{ bgcolor: "background.paper", maxWidth: { xs: "100%" } }}>
+    <Box sx={{ bgcolor: "background.paper" }}>
       <AppBar position="static" elevation={0} color="transparent">
         <Tabs
           value={value}
@@ -42,7 +42,10 @@ export default function MuiTabs(props: TabsProps) {
               key={i}
               label={link.title}
               {...a11yProps(i)}
-              sx={{ textTransform: "capitalize" }}
+              sx={{
+                textTransform: "capitalize",
+                minWidth: { xs: "fit-content" },
+              }}
             />
           ))}
         </Tabs>

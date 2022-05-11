@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { MenuItem } from "@mui/material";
 import MuiSelect from "src/app/components/MuiSelect";
 import Button from "src/app/components/Button";
